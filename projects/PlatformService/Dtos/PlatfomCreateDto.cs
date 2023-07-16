@@ -1,13 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PlatformService.Models
+namespace PlatformService.Dtos
 {
-    public class Platform
+    public class PlatformCreateDto
     {
-        [Key]
-        [Required]
-        public int Id { get; set; }
-
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
@@ -19,6 +15,5 @@ namespace PlatformService.Models
         [Required]
         [MaxLength(50)]
         public string cost { get; set; }
-
     }
 }
