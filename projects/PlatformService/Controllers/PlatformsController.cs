@@ -50,7 +50,8 @@ namespace PlatformServices.Controllers
             var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 
             // return Ok(platformReadDto);
-            return CreatedAtRoute(nameof(GetPlatformById), new { Id = platformReadDto.Id }, platformReadDto); //? adds a location header to the response with the URL of the newly created resource
+            return CreatedAtRoute(nameof(GetPlatformById), new { Id = platformReadDto.Id }, platformReadDto); 
+            //* adds a location header to the response with the URL of the newly created resource
             
         }
 
