@@ -53,7 +53,7 @@ namespace PlatformServices.Controllers
             return CreatedAtRoute(nameof(GetPlatformById), new { Id = platformReadDto.Id }, platformReadDto); 
             //* adds a location header to the response with the URL of the newly created resource
             
-        }
+        } 
 
     }
 }
