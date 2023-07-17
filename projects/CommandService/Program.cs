@@ -16,7 +16,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection(); //! we are not implementing HTTPS in this project , maybe we will implement it in the future
 
 app.UseAuthorization();
 
